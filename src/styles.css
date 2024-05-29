@@ -3,6 +3,7 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 header {
@@ -35,14 +36,99 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
-  background-color: beige;
+  background-color: #f2e7df;
   margin-top: 30px;
 }
+.footer ul {
+  list-style-type: none;
+  padding: 0%;
+}
 
+.footer a {
+  text-decoration: none;
+  color: brown;
+}
+
+.footer a:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+
+.footer h3 {
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  font-size: 15px;
+}
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/theman.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 2fr 2fr;
+  max-width: 1200px;
+  color: whitesmoke;
+  /*background-color: #f2e7df;*/
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.footerone {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  padding-right: 20px;
+}
+
+.footertwo {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.footerthree {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.grids h3 {
+  filter: contrast(50%);
+  font-weight: 200;
+}
+
+.gridone {
+  padding: 0%;
+  margin: 0%;
+}
 Button:hover {
   color: brown;
   cursor: pointer;
   font-weight: 800;
+}
+img {
+  width: 500px;
+  height: 500px;
+}
+
+img:hover {
+  scale: 1.1;
+  transition: all 100ms ease-in-out;
+  opacity: 50%;
+}
+
+main {
+  background-color: white;
 }
 
 @media (max-width: 900px) {
